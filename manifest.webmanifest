@@ -1,0 +1,10 @@
+{
+  "name": "Слияние — база отдыха",
+  "short_name": "Слияние",
+  "lang": "ru",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f2eee5",
+  "theme_color": "#18201b",
+  "icons": [{"src":"favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

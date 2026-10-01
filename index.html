@@ -1,559 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Слияние — база отдыха в Восточном Казахстане</title>
-  <meta name="description" content="База отдыха «Слияние» в Глубоковском районе, 12 км от Тарханки, на слиянии рек Ульба и Сержиха. Проживание, баня, снегоходы, рыбалка и отдых на природе.">
-  <link rel="canonical" href="https://sliyanie.kz/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Слияние — база отдыха в Восточном Казахстане</title>
+<meta name="description" content="База отдыха «Слияние» в Глубоковском районе, 12 км от Тарханки, на слиянии рек Ульба и Сержиха. Проживание, баня, снегоходы, рыбалка и отдых на природе.">
+<meta property="og:title" content="Слияние — там, где встречаются две реки">
+<meta property="og:description" content="База отдыха в Глубоковском районе Восточного Казахстана.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#18201b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#18201b;--ink2:#243029;--paper:#f2eee5;--paper2:#e7e1d5;--mist:#d4d0c5;--sage:#657463;--sand:#b79d73;--white:#fffdf8;--line:rgba(24,32,27,.15);--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--paper)}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer;border:0}img{display:block;width:100%;height:100%;object-fit:cover}.serif{font-family:'Playfair Display',serif}.wrap{width:min(1240px,calc(100% - 48px));margin:auto}.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}.muted{color:rgba(24,32,27,.62)}
+/* NAV */
+.nav{position:fixed;z-index:50;top:0;left:0;width:100%;padding:23px 0;color:#fff;transition:.5s var(--ease)}.nav.scrolled{padding:13px 0;background:rgba(24,32,27,.92);backdrop-filter:blur(16px);box-shadow:0 8px 30px rgba(0,0,0,.12)}.nav-inner{display:flex;align-items:center;justify-content:space-between}.brand{font-family:'Playfair Display',serif;font-size:24px;letter-spacing:.08em}.navlinks{display:flex;gap:28px;font-size:12px;text-transform:uppercase;letter-spacing:.08em}.navlinks a{opacity:.86;transition:.25s}.navlinks a:hover{opacity:1}.nav-cta{padding:12px 17px;border:1px solid rgba(255,255,255,.45);font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.06);color:#fff;transition:.3s}.nav-cta:hover{background:#fff;color:var(--ink)}.burger{display:none;background:transparent;color:#fff;font-size:24px}
+/* HERO */
+.hero{height:100svh;min-height:700px;position:relative;color:#fff;overflow:hidden;background:#263329}.hero-bg{position:absolute;inset:-3%;background-image:url('https://otdyh-vko.kz//storage/2750/213631151-3701155746651274-5540184742416813638-njpg.jpeg');background-size:cover;background-position:center 48%;transform:scale(1.04);will-change:transform}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,15,12,.54) 0%,rgba(9,15,12,.08) 42%,rgba(9,15,12,.76) 100%)}.hero-content{position:relative;z-index:2;height:100%;display:flex;align-items:flex-end;padding-bottom:120px}.hero-copy{max-width:830px}.hero-copy .eyebrow{margin-bottom:22px}.hero h1{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(54px,8.5vw,118px);line-height:.86;margin:0 0 28px;letter-spacing:-.055em}.hero h1 em{font-weight:500}.hero-lead{font-size:clamp(17px,1.8vw,23px);line-height:1.35;max-width:690px;margin:0 0 30px;color:rgba(255,255,255,.88)}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 21px;text-transform:uppercase;letter-spacing:.13em;font-size:11px;font-weight:600;transition:.35s var(--ease)}.btn-light{background:var(--white);color:var(--ink)}.btn-light:hover{transform:translateY(-2px);background:#fff}.btn-ghost{border:1px solid rgba(255,255,255,.5);color:#fff;background:rgba(255,255,255,.05)}.btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}.hero-stats{position:absolute;z-index:3;bottom:30px;right:24px;display:flex;gap:28px}.stat{border-left:1px solid rgba(255,255,255,.35);padding-left:16px}.stat b{display:block;font-family:'Manrope',sans-serif;font-size:19px;font-weight:500}.stat span{display:block;margin-top:5px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+/* GENERAL */
+.section{padding:140px 0}.dark{background:var(--ink);color:#f7f2e8}.section-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:58px}.section-title{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(45px,6vw,82px);line-height:.96;letter-spacing:-.045em;margin:0}.section-title em{font-style:italic}.section-kicker{max-width:280px;font-size:13px;line-height:1.6;color:rgba(255,255,255,.56)}.reveal{opacity:0;transform:translateY(35px);transition:opacity .9s var(--ease),transform .9s var(--ease)}.reveal.in{opacity:1;transform:none}
+/* INTRO */
+.intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:8vw;align-items:center}.intro-copy .section-title{font-size:clamp(48px,6.5vw,92px);max-width:750px}.intro-text{max-width:470px;font-size:17px;line-height:1.75;color:rgba(24,32,27,.67);margin-top:34px}.intro-image{height:650px;position:relative;overflow:hidden}.intro-image img{transition:transform 1.2s var(--ease)}.intro-image:hover img{transform:scale(1.035)}.image-note{position:absolute;left:18px;bottom:18px;padding:10px 13px;background:rgba(255,253,248,.9);font-size:10px;text-transform:uppercase;letter-spacing:.13em}
+/* ROOMS */
+.rooms{background:var(--paper2)}.room-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.room{position:relative;height:620px;overflow:hidden;background:#bbb}.room img{transition:transform 1s var(--ease);filter:saturate(.86)}.room:hover img{transform:scale(1.055)}.room:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(10,14,11,.8) 100%)}.room-info{position:absolute;z-index:2;bottom:28px;left:28px;right:28px;color:#fff}.room-info .eyebrow{opacity:.7}.room h3{font-family:'Playfair Display',serif;font-weight:500;font-size:34px;margin:8px 0 10px}.room p{font-size:13px;opacity:.78;margin:0}.price{margin-top:22px;font-size:13px;letter-spacing:.04em}.price strong{font-size:18px;font-weight:500}.price span{opacity:.62}
+/* EXPERIENCES */
+.experience-wrap{overflow:hidden}.experience-track{display:flex;gap:16px;width:max-content;transform:translateX(0);transition:transform .1s linear}.experience{width:min(460px,72vw);height:590px;position:relative;overflow:hidden}.experience img{transition:transform 1s var(--ease);filter:brightness(.78)}.experience:hover img{transform:scale(1.06)}.experience:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 20%,rgba(8,12,9,.88) 100%)}.experience-copy{position:absolute;z-index:2;left:28px;right:28px;bottom:30px;color:#fff}.experience-copy .eyebrow{opacity:.7}.experience-copy h3{font-family:'Playfair Display',serif;font-size:36px;font-weight:500;margin:8px 0}.experience-copy p{margin:0;color:rgba(255,255,255,.7);font-size:14px}
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Слияние — база отдыха в Восточном Казахстане">
-  <meta property="og:description" content="Там, где встречаются две реки и исчезает городской шум. 12 км от села Тарханка, на слиянии рек Ульба и Сержиха.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80">
-  <meta property="og:locale" content="ru_RU">
+.services-note{margin-top:22px;padding:16px 18px;border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.65);font-size:12px;letter-spacing:.02em}.services-note span{color:#fff;text-transform:uppercase;letter-spacing:.12em;font-size:10px;margin-right:10px}
+/* STATEMENT */
+.statement{min-height:720px;display:flex;align-items:center;position:relative;overflow:hidden;background:#26332a;color:#fff}.statement-bg{position:absolute;inset:0;background:url('https://otdyh-vko.kz//storage/2752/206184196-172068771565120-2458928501586029775-njpg.jpeg') center/cover;transform:scale(1.04)}.statement:after{content:"";position:absolute;inset:0;background:rgba(9,15,11,.58)}.statement-content{position:relative;z-index:2;max-width:850px}.statement h2{font-family:'Playfair Display',serif;font-size:clamp(50px,7vw,102px);line-height:.93;font-weight:500;letter-spacing:-.05em;margin:0 0 24px}.statement p{font-size:18px;line-height:1.55;max-width:600px;color:rgba(255,255,255,.76)}.badge{display:inline-flex;border:1px solid rgba(255,255,255,.4);padding:9px 12px;font-size:10px;letter-spacing:.18em;margin-top:28px}
+/* TRANSFER */
+.transfer{background:var(--paper2)}.transfer-card{display:grid;grid-template-columns:1.1fr .9fr;min-height:520px;background:var(--ink);color:#fff;overflow:hidden}.transfer-image{min-height:400px}.transfer-copy{padding:65px;display:flex;flex-direction:column;justify-content:center}.transfer-copy h2{font-family:'Playfair Display',serif;font-size:58px;line-height:.95;font-weight:500;margin:12px 0 28px}.transfer-copy p{color:rgba(255,255,255,.62);line-height:1.6;max-width:380px}.transfer-price{display:flex;align-items:baseline;gap:9px;margin-top:28px}.transfer-price strong{font-size:34px;font-weight:500}.transfer-price span{font-size:12px;color:rgba(255,255,255,.55)}.capacity{margin-top:18px;font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.55)}
+/* GALLERY */
+.gallery{padding-bottom:120px}.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr 1fr;grid-auto-rows:280px;gap:10px}.gallery-item{position:relative;overflow:hidden;background:#d0cabd;cursor:zoom-in}.gallery-item:nth-child(1){grid-row:span 2}.gallery-item:nth-child(4){grid-row:span 2}.gallery-item img{transition:transform .9s var(--ease)}.gallery-item:hover img{transform:scale(1.045)}.gallery-label{position:absolute;left:12px;bottom:12px;padding:7px 9px;background:rgba(24,32,27,.72);color:#fff;font-size:9px;letter-spacing:.12em;text-transform:uppercase;backdrop-filter:blur(8px)}
+/* EMOTION */
+.emotion{padding:180px 0;text-align:center;background:#ded8cb}.emotion h2{font-family:'Playfair Display',serif;font-size:clamp(52px,8vw,112px);line-height:.9;font-weight:500;letter-spacing:-.055em;margin:0 auto 30px;max-width:980px}.emotion p{font-size:16px;color:rgba(24,32,27,.6);line-height:1.6}
+/* BOOKING */
+.booking{background:var(--ink);color:#fff}.booking-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:10vw;align-items:start}.booking h2{font-family:'Playfair Display',serif;font-size:clamp(50px,6.2vw,86px);font-weight:500;line-height:.95;letter-spacing:-.05em;margin:15px 0 24px}.booking-intro p{color:rgba(255,255,255,.56);line-height:1.65;max-width:420px}.booking-form{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{position:relative}.field.full{grid-column:1/-1}.field label{position:absolute;top:10px;left:15px;font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.4);pointer-events:none}.field input,.field select{width:100%;height:64px;padding:25px 15px 9px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.055);color:#fff;outline:none;border-radius:0;appearance:none}.field select option{color:var(--ink)}.field input:focus,.field select:focus{border-color:rgba(255,255,255,.55)}.form-submit{grid-column:1/-1;margin-top:5px}.form-submit .btn{width:100%;background:#f4efe5;color:var(--ink);height:58px}.form-status{grid-column:1/-1;padding:20px;background:rgba(117,145,120,.18);border:1px solid rgba(155,180,158,.28);display:none;line-height:1.5}.form-status.show{display:block}
+/* CONTACT */
+.contact{padding:120px 0 60px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.contact-card{background:var(--paper2);min-height:430px;padding:48px;display:flex;flex-direction:column;justify-content:space-between}.contact-card h2{font-family:'Playfair Display',serif;font-size:60px;font-weight:500;line-height:.95;margin:12px 0}.contact-meta{font-size:15px;line-height:1.8;color:rgba(24,32,27,.64)}.phone{font-size:24px;margin-top:20px}.contact-actions{display:flex;gap:9px}.btn-dark{background:var(--ink);color:#fff}.btn-outline{border:1px solid var(--line);background:transparent}.map-card{background:#c8c4b9;position:relative;overflow:hidden;min-height:430px}.map-card iframe{width:100%;height:100%;min-height:430px;border:0;filter:saturate(.7) contrast(.95)}.map-overlay{position:absolute;left:18px;bottom:18px;background:rgba(255,253,248,.93);padding:15px 17px;font-size:11px;letter-spacing:.04em}.route{position:absolute;right:18px;bottom:18px;background:var(--ink);color:#fff;padding:14px 16px;font-size:10px;text-transform:uppercase;letter-spacing:.12em}
+/* FOOTER */
+.footer{background:var(--ink);color:#fff;padding:70px 0 25px}.footer-top{display:flex;justify-content:space-between;gap:50px;padding-bottom:70px}.footer-brand{font-family:'Playfair Display',serif;font-size:42px}.footer-tag{color:rgba(255,255,255,.5);margin-top:10px}.footer-links{display:flex;gap:55px}.footer-links div{display:flex;flex-direction:column;gap:11px;font-size:12px;color:rgba(255,255,255,.6)}.footer-links a:hover{color:#fff}.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display:flex;justify-content:space-between;color:rgba(255,255,255,.38);font-size:10px;text-transform:uppercase;letter-spacing:.1em}
+/* FLOAT */
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:55px;height:55px;border-radius:50%;display:grid;place-items:center;background:#2f6b46;color:#fff;box-shadow:0 12px 35px rgba(0,0,0,.22);font-size:21px;transition:.3s}.wa:hover{transform:translateY(-3px) scale(1.03)}
+/* LIGHTBOX */
+.lightbox{position:fixed;z-index:100;inset:0;background:rgba(5,8,6,.96);display:none;align-items:center;justify-content:center;padding:30px}.lightbox.open{display:flex}.lightbox img{width:auto;max-width:94vw;height:auto;max-height:88vh;object-fit:contain}.lb-close,.lb-prev,.lb-next{position:absolute;color:#fff;background:transparent;font-size:30px}.lb-close{right:25px;top:18px}.lb-prev{left:20px}.lb-next{right:20px}.lb-count{position:absolute;bottom:20px;color:rgba(255,255,255,.6);font-size:10px;letter-spacing:.15em}
+/* MOBILE */
+@media(max-width:850px){.wrap{width:min(100% - 30px,650px)}.nav{padding:17px 0}.navlinks,.nav-cta{display:none}.burger{display:block}.hero{min-height:700px}.hero-content{padding-bottom:135px}.hero h1{font-size:clamp(54px,16vw,90px)}.hero-lead{font-size:16px}.hero-stats{left:15px;right:15px;bottom:22px;justify-content:space-between;gap:8px}.stat{flex:1}.stat b{font-size:16px}.stat span{font-size:8px}.section{padding:90px 0}.section-head{display:block;margin-bottom:35px}.section-kicker{margin-top:20px}.intro-grid,.booking-grid,.transfer-card,.contact-grid{grid-template-columns:1fr;gap:0}.intro-image{height:500px;margin-top:40px}.room-grid{grid-template-columns:1fr}.room{height:510px}.experience{height:520px}.transfer-copy{padding:45px 30px}.transfer-copy h2{font-size:48px}.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px}.gallery-item:nth-child(1),.gallery-item:nth-child(4){grid-row:span 2}.emotion{padding:110px 0}.booking-form{grid-template-columns:1fr}.field.full,.form-submit,.form-status{grid-column:auto}.contact-card{min-height:390px;padding:35px}.contact-card h2{font-size:50px}.map-card,.map-card iframe{min-height:390px}.footer-top{display:block}.footer-links{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:30px}.footer-bottom{display:block;line-height:1.8}.lightbox{padding:12px}.lb-prev{left:5px}.lb-next{right:5px}}
+@media(max-width:430px){.hero-content{padding-bottom:128px}.hero-actions .btn{width:100%}.hero-stats{position:absolute}.room{height:470px}.gallery-grid{grid-template-columns:1fr 1fr;gap:6px}.gallery-item:nth-child(1){grid-column:1/-1;grid-row:span 2}.gallery-item:nth-child(4){grid-row:span 2}.footer-links{font-size:11px}}
+</style>
 
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23141714'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23c8b28a' text-anchor='middle'%3EС%3C/text%3E%3C/svg%3E">
-
-  <!-- Шрифты -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/main.js" defer></script>
+<style id="ultra-motion">
+:root{--lux:cubic-bezier(.16,1,.3,1);--soft:cubic-bezier(.22,1,.36,1)}
+html{scroll-behavior:smooth}body{overflow-x:hidden}
+/* cinematic entrance */
+body{animation:pageIn 1s var(--lux) both}@keyframes pageIn{from{opacity:0}to{opacity:1}}
+.hero-bg,.statement-bg{will-change:transform;transition:transform 1.2s var(--lux)}
+.hero-copy .eyebrow{opacity:0;transform:translateY(22px);animation:rise .9s var(--lux) .25s forwards}
+.hero h1{overflow:hidden}.hero h1,.hero-lead,.hero-actions{opacity:0;transform:translateY(38px);animation:rise 1.1s var(--lux) forwards}.hero h1{animation-delay:.38s}.hero-lead{animation-delay:.55s}.hero-actions{animation-delay:.7s}@keyframes rise{to{opacity:1;transform:none}}
+/* reveal */
+.reveal{opacity:0;transform:translateY(42px);filter:blur(4px);transition:opacity 1s var(--lux),transform 1s var(--lux),filter 1s var(--lux)}.reveal.in{opacity:1;transform:none;filter:blur(0)}
+/* image reveal */
+.intro-image,.room,.gallery-item,.experience,.transfer-image{clip-path:inset(0 0 0 0);transition:clip-path 1.2s var(--lux)}
+/* cards */
+.room,.experience,.gallery-item,.transfer-card,.contact-card,.map-card{transition:transform .7s var(--lux),box-shadow .7s var(--lux)}
+.room:hover,.experience:hover{transform:translateY(-7px);box-shadow:0 25px 70px rgba(0,0,0,.22)}
+.room img,.experience img,.gallery-item img,.intro-image img{transition:transform 1.2s var(--lux),filter 1.2s var(--lux)}
+.room:hover img,.experience:hover img,.gallery-item:hover img{transform:scale(1.065)}
+/* button sheen */
+.btn,.nav-cta,.route{position:relative;overflow:hidden;isolation:isolate}.btn:after,.nav-cta:after,.route:after{content:"";position:absolute;top:-80%;bottom:-80%;width:35%;left:-55%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.32),transparent);transform:skewX(-18deg);transition:left .8s var(--lux)}.btn:hover:after,.nav-cta:hover:after,.route:hover:after{left:125%}
+/* navbar glass */
+.nav{transition:padding .5s var(--lux),background .5s var(--lux),backdrop-filter .5s var(--lux),box-shadow .5s var(--lux)}
+.nav.scrolled{backdrop-filter:blur(20px) saturate(125%)}
+/* premium floating whatsapp */
+.wa{animation:waIn 1s var(--lux) 1.1s both}.wa:before{content:"";position:absolute;inset:-6px;border:1px solid rgba(47,107,70,.5);border-radius:50%;animation:ring 2.8s ease-out 2s infinite}@keyframes waIn{from{opacity:0;transform:translateY(25px) scale(.75)}to{opacity:1;transform:none}}@keyframes ring{0%{transform:scale(.8);opacity:.55}80%,100%{transform:scale(1.55);opacity:0}}
+/* lightbox */
+.lightbox.open{animation:fade .35s ease both}.lightbox.open img{animation:zoomIn .65s var(--lux) both}@keyframes fade{from{opacity:0}to{opacity:1}}@keyframes zoomIn{from{opacity:0;transform:scale(.9) translateY(20px)}to{opacity:1;transform:none}}
+/* cursor */
+@media(pointer:fine){.lux-cursor{position:fixed;z-index:9999;width:34px;height:34px;border:1px solid rgba(255,255,255,.7);border-radius:50%;pointer-events:none;mix-blend-mode:difference;transform:translate(-50%,-50%);transition:width .35s var(--soft),height .35s var(--soft)}.lux-cursor.active{width:60px;height:60px}}
+@media(max-width:850px){
+ .wrap{width:min(100% - 32px,1240px)}
+ .hero{min-height:100svh}.hero-content{padding-bottom:150px}.hero h1{font-size:clamp(55px,17vw,88px);line-height:.88}.hero-lead{font-size:16px;max-width:92%}.hero-stats{left:16px;right:16px;bottom:28px;justify-content:space-between;gap:10px}.stat{padding-left:11px}.stat b{font-size:16px}.stat span{font-size:8px}
+ .section{padding:90px 0}.section-head{display:block;margin-bottom:38px}.section-kicker{margin-top:18px}.intro-grid,.transfer-card,.booking-grid,.contact-grid{grid-template-columns:1fr}.intro-image{height:470px;margin-top:35px}.room-grid{grid-template-columns:1fr}.room{height:500px}.experience{height:500px;width:82vw}.transfer-copy{padding:42px 28px}.transfer-copy h2{font-size:48px}.transfer-image{min-height:330px;order:-1}.gallery-grid{grid-template-columns:1fr 1fr;grid-auto-rows:210px}.gallery-item:nth-child(1),.gallery-item:nth-child(4){grid-row:span 2}.emotion{padding:110px 0}.emotion h2{font-size:clamp(47px,14vw,78px)}.booking-form{grid-template-columns:1fr}.field.full,.form-submit,.form-status{grid-column:1}.contact-card{min-height:390px;padding:32px}.map-card,.map-card iframe{min-height:360px}.footer-top{display:block;padding-bottom:45px}.footer-links{margin-top:40px;gap:30px;flex-wrap:wrap}.footer-bottom{display:block;line-height:1.8}.footer-bottom span{display:block}.nav{padding:16px 0}.navlinks,.nav-cta{display:none}.burger{display:block;font-size:0;width:44px;height:44px;position:relative}.burger:before,.burger:after{content:"";position:absolute;left:10px;width:24px;height:1px;background:#fff;transition:.35s}.burger:before{top:17px}.burger:after{top:26px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important;filter:none!important}}
+</style>
 </head>
-
 <body>
+<header class="nav" id="nav"><div class="wrap nav-inner"><a class="brand" href="#top">СЛИЯНИЕ</a><nav class="navlinks"><a href="#about">О базе</a><a href="#stay">Проживание</a><a href="#experience">Впечатления</a><a href="#gallery">Галерея</a><a href="#contact">Как добраться</a></nav><a class="nav-cta" href="#booking">Забронировать</a><button class="burger" id="burger" aria-label="Открыть меню">☰</button></div></header>
+<main id="top">
+<section class="hero"><div class="hero-bg" id="heroBg"></div><div class="hero-content wrap"><div class="hero-copy reveal"><div class="eyebrow">Глубоковский район · Восточный Казахстан</div><h1>СЛИЯНИЕ<br><em>там, где встречаются две реки</em></h1><p class="hero-lead">И исчезает городской шум. 12 км от села Тарханка — на слиянии Ульбы и Сержихи.</p><div class="hero-actions"><a class="btn btn-light" href="#booking">Забронировать отдых</a><a class="btn btn-ghost" href="#about">Исследовать базу ↓</a></div></div></div><div class="hero-stats"><div class="stat"><b>12 км</b><span>от Тарханки</span></div><div class="stat"><b>Круглый год</b><span>сезон</span></div><div class="stat"><b>2–4</b><span>места в номерах</span></div></div></section>
+<section class="section" id="about"><div class="wrap intro-grid"><div class="intro-copy reveal"><div class="eyebrow">01 / Место</div><h2 class="section-title">Здесь время<br><em>идёт иначе.</em></h2><p class="intro-text">«Слияние» находится в месте, где встречаются реки Ульба и Сержиха. Здесь можно отойти от городской суеты, провести время среди природы и выбрать свой ритм отдыха.</p></div><div class="intro-image reveal"><img src="https://otdyh-vko.kz//storage/2752/206184196-172068771565120-2458928501586029775-njpg.jpeg" alt="Интерьер базы отдыха Слияние с видом на горы" loading="lazy"><div class="image-note">Слияние · Восточный Казахстан</div></div></div></section>
+<section class="section rooms" id="stay"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">02 / Проживание</div><h2 class="section-title">Пространство,<br><em>куда хочется вернуться.</em></h2></div><div class="section-kicker" style="color:rgba(24,32,27,.55)">Номера на 2, 3 и 4 места. Стоимость проживания — 75 000–90 000 ₸ за сутки.</div></div><div class="room-grid"><article class="room reveal"><img src="https://otdyh-vko.kz//storage/2756/129736817-827566514660284-8727150405854161625-njpg.jpeg" alt="Номер базы Слияние" loading="lazy"><div class="room-info"><div class="eyebrow">02 места</div><h3>Для двоих</h3><p>Уютный вариант для спокойного отдыха.</p><div class="price"><strong>75 000–90 000 ₸</strong> <span>/ сутки</span></div></div></article><article class="room reveal"><img src="https://otdyh-vko.kz//storage/2753/semejnyij-turizm76eb4ae4251613bbf7a5292ef5f3e6dejpg.jpeg" alt="Территория базы Слияние зимой" loading="lazy"><div class="room-info"><div class="eyebrow">03 места</div><h3>Для небольшой компании</h3><p>Формат для тех, кто хочет быть ближе к природе.</p><div class="price"><strong>75 000–90 000 ₸</strong> <span>/ сутки</span></div></div></article><article class="room reveal"><img src="https://otdyh-vko.kz//storage/2754/159862320-961976224543965-3812462013791984277-njpg.jpeg" alt="База Слияние в зимнем сезоне" loading="lazy"><div class="room-info"><div class="eyebrow">04 места</div><h3>Для семьи или друзей</h3><p>Пространство для совместного отдыха.</p><div class="price"><strong>75 000–90 000 ₸</strong> <span>/ сутки</span></div></div></article></div></div></section>
+<section class="section dark" id="experience"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">03 / Впечатления</div><h2 class="section-title">Чем заняться<br><em>здесь.</em></h2></div><div class="section-kicker">Не расписание и не список развлечений. Просто несколько способов прожить это место по-своему.</div></div><div class="experience-wrap"><div class="experience-track" id="track"><article class="experience"><img src="https://otdyh-vko.kz//storage/2755/166580786-1133929000456642-5932280215602146360-njpg.jpeg" alt="Снегоходы на базе Слияние" loading="lazy"><div class="experience-copy"><div class="eyebrow">Снегоходы</div><h3>Зимний маршрут начинается здесь.</h3><p>До базы можно добраться на снегоходе.</p></div></article><article class="experience"><img src="https://otdyh-vko.kz//storage/2751/129740971-391344008872618-158611787539006544-njpg.jpeg" alt="Камин в интерьере базы Слияние" loading="lazy"><div class="experience-copy"><div class="eyebrow">Камин</div><h3>Вечер у огня.</h3><p>Тёплый свет и спокойный ритм.</p></div></article><article class="experience"><img src="https://otdyh-vko.kz//storage/2752/206184196-172068771565120-2458928501586029775-njpg.jpeg" alt="Природа вокруг базы Слияние" loading="lazy"><div class="experience-copy"><div class="eyebrow">Пешие прогулки</div><h3>Исследуйте окружающую природу.</h3><p>Тишина начинается за порогом.</p></div></article><article class="experience"><img src="https://otdyh-vko.kz//storage/2754/159862320-961976224543965-3812462013791984277-njpg.jpeg" alt="Зимний пейзаж Слияния" loading="lazy"><div class="experience-copy"><div class="eyebrow">Лыжные прогулки</div><h3>Зима, снег и простор.</h3><p>До базы можно добраться на лыжах.</p></div></article><article class="experience"><img src="https://otdyh-vko.kz//storage/2750/213631151-3701155746651274-5540184742416813638-njpg.jpeg" alt="Вечер у огня на базе Слияние" loading="lazy"><div class="experience-copy"><div class="eyebrow">Баня</div><h3>Тепло после холодного дня.</h3><p>Один из способов замедлиться.</p></div></article><article class="experience"><img src="https://otdyh-vko.kz//storage/2752/206184196-172068771565120-2458928501586029775-njpg.jpeg" alt="Река и природа вокруг базы" loading="lazy"><div class="experience-copy"><div class="eyebrow">Рыбалка</div><h3>Хариус и тишина горной реки.</h3><p>Рыбалка — одна из услуг базы.</p></div></article><article class="experience"><img src="https://otdyh-vko.kz//storage/2751/129740971-391344008872618-158611787539006544-njpg.jpeg" alt="Барная стойка в базе Слияние" loading="lazy"><div class="experience-copy"><div class="eyebrow">Барная стойка</div><h3>Вечер продолжается.</h3><p>Пространство для неспешного вечера.</p></div></article></div><div class="services-note reveal"><span>Питание</span> по договоренности</div></div></div></section>
+<section class="statement"><div class="statement-bg" id="statementBg"></div><div class="wrap statement-content reveal"><div class="eyebrow">04 / Локация</div><h2>12 км от Тарханки.<br><em>Дальше — только природа.</em></h2><p>До базы можно добраться на снегоходе или лыжах. Круглогодичный отдых в Глубоковском районе — там, где Ульба встречается с Сержихой.</p><span class="badge">КРУГЛОГОДИЧНО</span></div></section>
+<section class="section transfer"><div class="wrap"><div class="transfer-card reveal"><div class="transfer-image"><img src="https://otdyh-vko.kz//storage/2755/166580786-1133929000456642-5932280215602146360-njpg.jpeg" alt="Снегоходный трансфер на базу Слияние" loading="lazy"></div><div class="transfer-copy"><div class="eyebrow">05 / Трансфер</div><h2>Последние километры — часть приключения.</h2><p>Снегоходный трансфер помогает добраться до базы в условиях зимнего маршрута.</p><div class="transfer-price"><strong>10 000 ₸</strong><span>в одну сторону</span></div><div class="capacity">Вместимость · до 5 человек</div></div></div></div></section>
+<section class="section gallery" id="gallery"><div class="wrap"><div class="section-head reveal"><div><div class="eyebrow">06 / Галерея</div><h2 class="section-title">Увидеть.<br><em>Почувствовать.</em></h2></div><div class="section-kicker" style="color:rgba(24,32,27,.55)">Реальные фотографии базы из открытых источников. Перед коммерческим запуском лучше заменить их на оригиналы, предоставленные владельцем.</div></div><div class="gallery-grid"><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2750/213631151-3701155746651274-5540184742416813638-njpg.jpeg" alt="База Слияние вечером и костёр" loading="lazy"><span class="gallery-label">Вечер</span></div><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2752/206184196-172068771565120-2458928501586029775-njpg.jpeg" alt="Интерьер базы Слияние с видом на горы" loading="lazy"><span class="gallery-label">Интерьер</span></div><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2754/159862320-961976224543965-3812462013791984277-njpg.jpeg" alt="База Слияние зимой" loading="lazy"><span class="gallery-label">Зима</span></div><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2755/166580786-1133929000456642-5932280215602146360-njpg.jpeg" alt="Снегоходы на базе Слияние" loading="lazy"><span class="gallery-label">Снегоходы</span></div><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2751/129740971-391344008872618-158611787539006544-njpg.jpeg" alt="Камин и барная стойка в интерьере Слияния" loading="lazy"><span class="gallery-label">Камин</span></div><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2756/129736817-827566514660284-8727150405854161625-njpg.jpeg" alt="Номер базы Слияние" loading="lazy"><span class="gallery-label">Номер</span></div><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2753/semejnyij-turizm76eb4ae4251613bbf7a5292ef5f3e6dejpg.jpeg" alt="Территория базы Слияние зимой" loading="lazy"><span class="gallery-label">Территория</span></div><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2760/209871208-983351489160656-7098093413725596232-njpg.jpeg" alt="Природа рядом с базой Слияние" loading="lazy"><span class="gallery-label">Природа</span></div><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2757/129680863-246094583559719-8077601511587824467-njpg.jpeg" alt="Санузел в номере Слияния" loading="lazy"><span class="gallery-label">Санузел</span></div><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2758/130572781-389344439184782-3928932951492495662-njpg.jpeg" alt="Умывальник в номере Слияния" loading="lazy"><span class="gallery-label">Удобства</span></div><div class="gallery-item reveal"><img src="https://otdyh-vko.kz//storage/2759/129746382-667180380592565-8972680521949250663-njpg.jpeg" alt="Душ в номере Слияния" loading="lazy"><span class="gallery-label">Душ</span></div></div></div></section>
+<section class="emotion"><div class="wrap reveal"><div class="eyebrow">07 / Ритм</div><h2>Иногда лучший план —<br><em>никуда не спешить.</em></h2><p>Природа. Тишина. Тёплый огонь.<br>И время, которое принадлежит только вам.</p></div></section>
+<section class="section booking" id="booking"><div class="wrap booking-grid"><div class="booking-intro reveal"><div class="eyebrow">08 / Бронирование</div><h2>Ваше путешествие<br><em>начинается здесь.</em></h2><p>Оставьте заявку — для DEMO она никуда не отправляется и не создаёт настоящее бронирование. После отправки можно сразу связаться с базой в WhatsApp.</p></div><form class="booking-form reveal" id="bookingForm"><div class="field"><label for="checkin">Дата заезда</label><input id="checkin" type="date" required></div><div class="field"><label for="checkout">Дата выезда</label><input id="checkout" type="date" required></div><div class="field"><label for="guests">Количество гостей</label><select id="guests" required><option value="">Выберите</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></div><div class="field"><label for="room">Тип размещения</label><select id="room" required><option value="">Выберите</option><option>2 места</option><option>3 места</option><option>4 места</option></select></div><div class="field full"><label for="name">Имя</label><input id="name" type="text" placeholder="Ваше имя" required></div><div class="field full"><label for="phone">Телефон</label><input id="phone" type="tel" placeholder="+7 ___ ___ __ __" required></div><div class="form-submit"><button class="btn" type="submit">Отправить заявку</button></div><div class="form-status" id="formStatus">Спасибо!<br>Мы получили вашу заявку. Для подтверждения бронирования свяжитесь с нами.</div></form></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="contact-grid"><div class="contact-card reveal"><div><div class="eyebrow">09 / Контакты</div><h2>СЛИЯНИЕ</h2><div class="contact-meta">Глубоковский район<br>12 км от села Тарханка<br>На слиянии рек Ульба и Сержиха<br>Круглогодично</div><div class="phone">+7 705 417 36 02</div></div><div class="contact-actions"><a class="btn btn-dark" href="tel:+77054173602">Позвонить</a><a class="btn btn-outline" target="_blank" rel="noopener" href="https://wa.me/77054173602?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0%20%C2%AB%D0%A1%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%C2%BB.">WhatsApp</a></div></div><div class="map-card reveal"><iframe title="Карта района Тарханки" src="https://www.openstreetmap.org/export/embed.html?bbox=82.82%2C50.02%2C83.10%2C50.20&amp;layer=mapnik&amp;marker=50.112382%2C82.951610" loading="lazy"></iframe><div class="map-overlay">12 км от села Тарханка</div><a class="route" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Тарханка,+Восточно-Казахстанская+область">Построить маршрут ↗</a></div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footer-top"><div><div class="footer-brand">СЛИЯНИЕ</div><div class="footer-tag">Там, где встречаются две реки.</div></div><div class="footer-links"><div><a href="#about">О базе</a><a href="#stay">Проживание</a><a href="#experience">Впечатления</a></div><div><a href="#gallery">Галерея</a><a href="#contact">Контакты</a><a href="#booking">Бронирование</a></div><div><a target="_blank" rel="noopener" href="https://wa.me/77054173602">WhatsApp</a><a target="_blank" rel="noopener" href="https://www.instagram.com/baza_sliyanie/">Instagram</a></div></div></div><div class="footer-bottom"><span>© 2026 Слияние</span><span>Глубоковский район · Восточный Казахстан</span></div></div></footer>
+<a class="wa" aria-label="Написать в WhatsApp" target="_blank" rel="noopener" href="https://wa.me/77054173602?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0%20%C2%AB%D0%A1%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%C2%BB.">WA</a>
+<div class="lightbox" id="lightbox"><button class="lb-close" id="lbClose" aria-label="Закрыть">×</button><button class="lb-prev" id="lbPrev" aria-label="Предыдущее">‹</button><img id="lbImage" src="" alt=""><button class="lb-next" id="lbNext" aria-label="Следующее">›</button><div class="lb-count" id="lbCount"></div></div>
+<script>
+const nav=document.getElementById('nav'), heroBg=document.getElementById('heroBg'), statementBg=document.getElementById('statementBg');
+window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>40);heroBg.style.transform=`translateY(${scrollY*.08}px) scale(1.04)`;const s=document.querySelector('.statement');if(s){const r=s.getBoundingClientRect();statementBg.style.transform=`translateY(${(innerHeight/2-r.top)*.04}px) scale(1.05)`}}, {passive:true});
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');observer.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const burger=document.getElementById('burger');burger.addEventListener('click',()=>{const open=document.querySelector('.mobile-menu');if(open){open.remove();return}const m=document.createElement('div');m.className='mobile-menu';m.innerHTML=`<div><a href="#about">О базе</a><a href="#stay">Проживание</a><a href="#experience">Впечатления</a><a href="#gallery">Галерея</a><a href="#contact">Как добраться</a><a href="#booking">Забронировать</a></div>`;Object.assign(m.style,{position:'fixed',inset:'0',zIndex:'45',background:'#18201b',color:'#fff',padding:'110px 30px 30px',fontFamily:'DM Sans',fontSize:'30px'});m.querySelector('div').style.display='flex';m.querySelector('div').style.flexDirection='column';m.querySelector('div').style.gap='22px';m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>m.remove()));document.body.appendChild(m)});
+const track=document.getElementById('track');document.querySelector('.experience-wrap').addEventListener('wheel',e=>{if(innerWidth>850 && Math.abs(e.deltaY)>Math.abs(e.deltaX)){const max=track.scrollWidth-document.querySelector('.experience-wrap').clientWidth;const current=Math.abs(parseFloat(getComputedStyle(track).transform.split(',')[4]||0));if((e.deltaY>0&&current<max)||(e.deltaY<0&&current>0)){e.preventDefault();track.style.transform=`translateX(${Math.max(-max,Math.min(0,(e.deltaY>0? -current-e.deltaY*.65:-current-e.deltaY*.65)))}px)`}}},{passive:false});
+const gallery=[...document.querySelectorAll('.gallery-item img')],lb=document.getElementById('lightbox'),lbImg=document.getElementById('lbImage'),lbCount=document.getElementById('lbCount');let idx=0;function show(i){idx=(i+gallery.length)%gallery.length;lbImg.src=gallery[idx].src;lbImg.alt=gallery[idx].alt;lbCount.textContent=`0${idx+1} / 0${gallery.length}`;lb.classList.add('open');document.body.style.overflow='hidden'}function close(){lb.classList.remove('open');document.body.style.overflow=''}gallery.forEach((im,i)=>im.parentElement.addEventListener('click',()=>show(i)));document.getElementById('lbClose').onclick=close;document.getElementById('lbPrev').onclick=()=>show(idx-1);document.getElementById('lbNext').onclick=()=>show(idx+1);lb.addEventListener('click',e=>{if(e.target===lb)close()});document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')close();if(e.key==='ArrowRight')show(idx+1);if(e.key==='ArrowLeft')show(idx-1)});
+let sx=0;lb.addEventListener('touchstart',e=>sx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(idx+(dx<0?1:-1))},{passive:true});
+const form=document.getElementById('bookingForm'),status=document.getElementById('formStatus');form.addEventListener('submit',e=>{e.preventDefault();const ci=document.getElementById('checkin').value,co=document.getElementById('checkout').value;if(co<=ci){alert('Дата выезда должна быть позже даты заезда.');return}status.classList.add('show');status.scrollIntoView({behavior:'smooth',block:'nearest'});form.querySelector('.form-submit').style.display='none'});
+const ci=document.getElementById('checkin'),co=document.getElementById('checkout');const today=new Date().toISOString().split('T')[0];ci.min=today;co.min=today;ci.addEventListener('change',()=>co.min=ci.value||today);
+</script>
 
-  <!-- =====================  NAVBAR  ===================== -->
-  <header class="nav" id="top">
-    <div class="nav__inner">
-      <a href="#top" class="nav__logo" aria-label="Слияние — на главную">Слияние</a>
-      <nav class="nav__links" aria-label="Основная навигация">
-        <a href="#about">О базе</a>
-        <a href="#stay">Проживание</a>
-        <a href="#experiences">Впечатления</a>
-        <a href="#gallery">Галерея</a>
-        <a href="#contacts">Как добраться</a>
-      </nav>
-      <a href="#booking" class="btn btn--light nav__cta">Забронировать</a>
-      <button class="burger" aria-label="Открыть меню" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- Мобильное меню -->
-  <nav class="mmenu" aria-label="Мобильная навигация">
-    <a class="mmenu__link" href="#about"><small>01</small> О базе</a>
-    <a class="mmenu__link" href="#stay"><small>02</small> Проживание</a>
-    <a class="mmenu__link" href="#experiences"><small>03</small> Впечатления</a>
-    <a class="mmenu__link" href="#gallery"><small>04</small> Галерея</a>
-    <a class="mmenu__link" href="#contacts"><small>05</small> Как добраться</a>
-    <a class="mmenu__link" href="#booking"><small>06</small> Забронировать</a>
-    <div class="mmenu__foot">
-      <a href="tel:+77054173602">+7 705 417 36 02</a>
-      <span>Глубоковский район · 12 км от Тарханки</span>
-    </div>
-  </nav>
-
-  <!-- =====================  HERO  ===================== -->
-  <section class="hero" aria-label="База отдыха Слияние">
-    <div class="hero__media">
-      <div class="hero__slide active">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=2000&q=80" alt="Горные вершины над морем облаков на закате — окрестности базы отдыха «Слияние»" fetchpriority="high">
-      </div>
-      <div class="hero__slide">
-        <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=2000&q=80" alt="Горная река в утреннем тумане среди хвойного леса" loading="lazy">
-      </div>
-      <div class="hero__slide">
-        <img src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?auto=format&fit=crop&w=2000&q=80" alt="Снежные горные пики над облаками — зима на базе отдыха «Слияние»" loading="lazy">
-      </div>
-    </div>
-    <div class="hero__veil"></div>
-
-    <div class="hero__content">
-      <p class="eyebrow eyebrow--light">База отдыха · Восточный Казахстан</p>
-      <h1 class="hero__title">Слияние</h1>
-      <p class="hero__tagline">Там, где встречаются две реки<br>и исчезает городской шум.</p>
-      <p class="hero__sub">База отдыха в живописном уголке Восточного Казахстана — 12 км от села Тарханка, на слиянии рек Ульба и Сержиха.</p>
-      <div class="btn-row">
-        <a href="#booking" class="btn btn--light">Забронировать отдых</a>
-        <a href="#about" class="btn btn--ghost-light">Исследовать базу ↓</a>
-      </div>
-    </div>
-
-    <div class="hero__scrollcue" aria-hidden="true"><i></i>Листайте вниз</div>
-
-    <div class="hero__facts">
-      <div class="hero__fact"><b>12 км</b><span>от Тарханки</span></div>
-      <div class="hero__fact"><b>Круглый год</b><span>сезон</span></div>
-      <div class="hero__fact"><b>2–4</b><span>места в номерах</span></div>
-    </div>
-  </section>
-
-  <!-- =====================  О БАЗЕ  ===================== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="about__grid">
-        <div class="about__text">
-          <p class="eyebrow reveal">О базе</p>
-          <h2 class="h-display reveal" style="--d:.08s">Здесь время<br>идёт <em>иначе</em>.</h2>
-          <p class="lead reveal" style="--d:.16s">«Слияние» находится в месте, где встречаются реки Ульба и Сержиха. Здесь можно отойти от городской суеты, провести время среди природы и выбрать свой ритм отдыха.</p>
-          <p class="about__note reveal" style="--d:.24s">Два притока. Одна долина.<br>И ни одной лишней мысли.</p>
-        </div>
-        <figure class="about__media">
-          <div class="frame-main clip-reveal">
-            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" alt="Солнечные лучи в хвойном лесу — природа окрестностей базы" loading="lazy">
-          </div>
-          <div class="frame-sub clip-reveal" style="--d:.15s">
-            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80" alt="Зелёные холмы в утреннем тумане" loading="lazy">
-          </div>
-          <figcaption class="reveal" style="--d:.3s">Реки Ульба и Сержиха · Глубоковский район</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- =====================  ВПЕЧАТЛЕНИЯ  ===================== -->
-  <section class="section" id="experiences">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow reveal">Чем заняться</p>
-        <h2 class="h-display reveal" style="--d:.08s">Впечатления,<br>которые останутся <em>надолго</em>.</h2>
-      </div>
-
-      <div class="exp__wrap reveal" style="--d:.12s">
-        <button class="exp__btn exp__btn--prev" data-exp-prev aria-label="Предыдущая карточка">←</button>
-        <div class="exp__track">
-          <article class="exp-card">
-            <div class="exp-card__icon">🏂</div>
-            <h3>Снегоходные прогулки</h3>
-            <p>Адреналин и свежий воздух. Исследуйте окрестности базы на скоростном снегоходе зимой.</p>
-          </article>
-          <article class="exp-card">
-            <div class="exp-card__icon">🛷</div>
-            <h3>Лыжные маршруты</h3>
-            <p>Покорите склоны на лыжах или снегоступах среди девственной природы.</p>
-          </article>
-          <article class="exp-card">
-            <div class="exp-card__icon">🐟</div>
-            <h3>Рыбалка на хариуса</h3>
-            <p>На реках Ульба и Сержиха — отличные условия для рыбалки. Летний сезон особенно щедр.</p>
-          </article>
-          <article class="exp-card">
-            <div class="exp-card__icon">🥾</div>
-            <h3>Пешие прогулки</h3>
-            <p>Экологичный способ изучить горы, реки и лесную экосистему вокруг базы.</p>
-          </article>
-          <article class="exp-card">
-            <div class="exp-card__icon">🔥</div>
-            <h3>Баня и камин</h3>
-            <p>Расслабьтесь в традиционной русской бане или уютно проведите вечер у теплого камина.</p>
-          </article>
-          <article class="exp-card">
-            <div class="exp-card__icon">🍷</div>
-            <h3>Барная стойка</h3>
-            <p>Горячие напитки, местное пиво и уютная атмосфера с видом на реки.</p>
-          </article>
-        </div>
-        <button class="exp__btn exp__btn--next" data-exp-next aria-label="Следующая карточка">→</button>
-        <div class="exp__progress"><i></i></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =====================  ПРОЖИВАНИЕ  ===================== -->
-  <section class="section section--tint" id="stay">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow reveal">Ваше место для отдыха</p>
-        <h2 class="h-display reveal" style="--d:.08s">Пространство,<br>куда хочется <em>вернуться</em>.</h2>
-      </div>
-
-      <div class="stay__cards">
-        <article class="stay-card reveal" style="--d:.05s">
-          <div class="stay-card__media">
-            <img src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=1000&q=80" alt="Домик на горном склоне на закате — атмосфера размещения на базе «Слияние»" loading="lazy">
-          </div>
-          <div class="stay-card__body">
-            <p class="stay-card__num">Вариант 01</p>
-            <h3 class="stay-card__title">2 места</h3>
-            <p class="stay-card__text">Уютный вариант для двоих — уединиться среди гор и услышать, как звучит тишина.</p>
-            <a class="stay-card__link" href="#booking">Забронировать
-              <svg width="26" height="10" viewBox="0 0 26 10" fill="none"><path d="M0 5h24M20 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <article class="stay-card reveal" style="--d:.15s">
-          <div class="stay-card__media">
-            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1000&q=80" alt="Утренний туман над зелёными холмами" loading="lazy">
-          </div>
-          <div class="stay-card__body">
-            <p class="stay-card__num">Вариант 02</p>
-            <h3 class="stay-card__title">3 места</h3>
-            <p class="stay-card__text">Для небольшой компании — место, где вечер у камина становится главным событием дня.</p>
-            <a class="stay-card__link" href="#booking">Забронировать
-              <svg width="26" height="10" viewBox="0 0 26 10" fill="none"><path d="M0 5h24M20 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
-            </a>
-          </div>
-        </article>
-
-        <article class="stay-card reveal" style="--d:.25s">
-          <div class="stay-card__media">
-            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1000&q=80" alt="Золотой рассвет над лугом в горах" loading="lazy">
-          </div>
-          <div class="stay-card__body">
-            <p class="stay-card__num">Вариант 03</p>
-            <h3 class="stay-card__title">4 места</h3>
-            <p class="stay-card__text">Для семьи или друзей — чтобы всем хватило простора, реки и неба над головой.</p>
-            <a class="stay-card__link" href="#booking">Забронировать
-              <svg width="26" height="10" viewBox="0 0 26 10" fill="none"><path d="M0 5h24M20 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg>
-            </a>
-          </div>
-        </article>
-      </div>
-
-      <div class="stay__price reveal" style="--d:.1s">
-        <div>
-          <p class="stay__price-label">Стоимость проживания</p>
-          <p class="stay__price-value">от 75 000 ₸ до 90 000 ₸ <small>/ сутки</small></p>
-        </div>
-        <a href="#booking" class="btn btn--ink">Узнать о размещении</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- =====================  ВПЕЧАТЛЕНИЯ  ===================== -->
-  <section class="section section--dark exp" id="experiences">
-    <div class="container exp__head">
-      <div>
-        <p class="eyebrow eyebrow--light reveal">Чем заняться</p>
-        <h2 class="h-section reveal" style="--d:.08s">Дни здесь наполнены<br>простыми вещами.</h2>
-      </div>
-      <div class="exp__nav reveal" style="--d:.16s">
-        <button data-exp-prev aria-label="Назад">
-          <svg width="22" height="12" viewBox="0 0 26 12" fill="none"><path d="M26 6H2M6 1L1 6l5 5" stroke="currentColor" stroke-width="1.2"/></svg>
-        </button>
-        <button data-exp-next aria-label="Вперёд">
-          <svg width="22" height="12" viewBox="0 0 26 12" fill="none"><path d="M0 6h24M20 1l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="exp__track">
-      <article class="exp-card">
-        <img src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?auto=format&fit=crop&w=1000&q=80" alt="Снежные горные пики — зимние маршруты на снегоходах" loading="lazy">
-        <span class="exp-card__idx">01</span>
-        <div class="exp-card__body"><h3>Снегоходы</h3><p>Зимний маршрут начинается здесь.</p></div>
-      </article>
-      <article class="exp-card">
-        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000&q=80" alt="Тёплый свет в хвойном лесу — атмосфера бани" loading="lazy">
-        <span class="exp-card__idx">02</span>
-        <div class="exp-card__body"><h3>Баня</h3><p>Тепло после холодного дня.</p></div>
-      </article>
-      <article class="exp-card">
-        <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1000&q=80" alt="Золотой вечерний свет — вечер у камина" loading="lazy">
-        <span class="exp-card__idx">03</span>
-        <div class="exp-card__body"><h3>Камин</h3><p>Вечер у огня.</p></div>
-      </article>
-      <article class="exp-card">
-        <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=80" alt="Тихая горная река — рыбалка на хариуса" loading="lazy">
-        <span class="exp-card__idx">04</span>
-        <div class="exp-card__body"><h3>Рыбалка</h3><p>Хариус и тишина горной реки.</p></div>
-      </article>
-      <article class="exp-card">
-        <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1000&q=80" alt="Пеший маршрут в горах — прогулки по окрестностям" loading="lazy">
-        <span class="exp-card__idx">05</span>
-        <div class="exp-card__body"><h3>Пешие прогулки</h3><p>Исследуйте окружающую природу.</p></div>
-      </article>
-      <article class="exp-card">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1000&h=1400&q=80" alt="Горы и облака — лыжные прогулки зимой" loading="lazy">
-        <span class="exp-card__idx">06</span>
-        <div class="exp-card__body"><h3>Лыжные прогулки</h3><p>Зима, снег и простор.</p></div>
-      </article>
-      <article class="exp-card">
-        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1000&q=80" alt="Напиток на барной стойке — вечер продолжается" loading="lazy">
-        <span class="exp-card__idx">07</span>
-        <div class="exp-card__body"><h3>Барная стойка</h3><p>Вечер продолжается.</p></div>
-      </article>
-    </div>
-    <div class="exp__progress" aria-hidden="true"><i></i></div>
-  </section>
-
-  <!-- =====================  «ТУДА, ГДЕ НЕТ ШУМА»  ===================== -->
-  <section class="silence" aria-label="12 км от Тарханки — дальше только природа">
-    <div class="silence__bg">
-      <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=2000&q=80" alt="Река среди туманного хвойного леса" loading="lazy">
-    </div>
-    <div class="silence__content">
-      <span class="silence__badge reveal">Круглогодично</span>
-      <h2 class="silence__title reveal" style="--d:.08s">12 км от Тарханки.<br>Дальше — только природа.</h2>
-      <p class="silence__text reveal" style="--d:.16s">До базы можно добраться на снегоходе или лыжах.</p>
-    </div>
-  </section>
-
-  <!-- =====================  ТРАНСФЕР  ===================== -->
-  <section class="section" id="transfer">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow reveal">Трансфер</p>
-        <h2 class="h-section reveal" style="--d:.08s">Последние километры —<br>часть приключения.</h2>
-      </div>
-      <div class="transfer-card reveal" style="--d:.12s">
-        <div class="transfer-card__media">
-          <img src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?auto=format&fit=crop&w=1200&h=1200&q=80" alt="Зимние горы — снегоходный трансфер до базы «Слияние»" loading="lazy">
-        </div>
-        <div class="transfer-card__body">
-          <p class="eyebrow eyebrow--light">Снегоходный трансфер</p>
-          <p class="transfer-card__quote">Дорога заканчивается там, где начинается настоящая глубинка. Последний отрезок до базы проходит по зимнему маршруту.</p>
-          <div class="transfer-card__row">
-            <div class="transfer-card__cell"><b>10 000 ₸</b><span>в одну сторону</span></div>
-            <div class="transfer-card__cell"><b>до 5</b><span>человек за раз</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =====================  ГАЛЕРЕЯ  ===================== -->
-  <section class="section section--tint" id="gallery">
-    <div class="container">
-      <div class="section-head">
-        <p class="eyebrow reveal">Галерея</p>
-        <h2 class="h-display reveal" style="--d:.08s">Место, которое<br>нужно <em>увидеть</em>.</h2>
-      </div>
-
-      <div class="gallery__grid">
-        <figure class="gallery__item clip-reveal">
-          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=900&q=80" data-full="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=85" alt="Горные вершины над морем облаков на закате" loading="lazy" width="900" height="600">
-          <figcaption>Вершины над облаками</figcaption>
-        </figure>
-        <figure class="gallery__item clip-reveal" style="--d:.06s">
-          <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=900&h=1200&q=80" data-full="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1920&q=85" alt="Горная река в утреннем тумане" loading="lazy" width="900" height="1200">
-          <figcaption>Утро на реке</figcaption>
-        </figure>
-        <figure class="gallery__item clip-reveal" style="--d:.12s">
-          <img src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=900&q=80" data-full="https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=1920&q=85" alt="Домик на склоне в вечернем свете" loading="lazy" width="900" height="600">
-          <figcaption>Вечер у дома</figcaption>
-        </figure>
-        <figure class="gallery__item clip-reveal" style="--d:.18s">
-          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&h=1150&q=80" data-full="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=85" alt="Свет в хвойном лесу" loading="lazy" width="900" height="1150">
-          <figcaption>Лес после дождя</figcaption>
-        </figure>
-        <figure class="gallery__item clip-reveal" style="--d:.24s">
-          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=900&q=80" data-full="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1920&q=85" alt="Лодка на бирюзовой воде озера среди гор" loading="lazy" width="900" height="600">
-          <figcaption>На воде</figcaption>
-        </figure>
-        <figure class="gallery__item clip-reveal" style="--d:.3s">
-          <img src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?auto=format&fit=crop&w=900&h=1250&q=80" data-full="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?auto=format&fit=crop&w=1920&q=85" alt="Снежные пики над облаками" loading="lazy" width="900" height="1250">
-          <figcaption>Зима в горах</figcaption>
-        </figure>
-        <figure class="gallery__item clip-reveal" style="--d:.36s">
-          <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=900&q=80" data-full="https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&w=1920&q=85" alt="Тропа через горную долину — пеший маршрут" loading="lazy" width="900" height="600">
-          <figcaption>Дорога наверх</figcaption>
-        </figure>
-        <figure class="gallery__item clip-reveal" style="--d:.42s">
-          <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&h=1100&q=80" data-full="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1920&q=85" alt="Золотой рассвет над лугом" loading="lazy" width="900" height="1100">
-          <figcaption>Рассвет</figcaption>
-        </figure>
-        <figure class="gallery__item clip-reveal" style="--d:.48s">
-          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=900&q=80" data-full="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=85" alt="Туманное утро над зелёными холмами" loading="lazy" width="900" height="600">
-          <figcaption>Туманное утро</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- Лайтбокс -->
-  <div class="lightbox" role="dialog" aria-modal="true" aria-label="Просмотр фотографий">
-    <button class="lightbox__close" aria-label="Закрыть">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 1l16 16M17 1L1 17" stroke="currentColor" stroke-width="1.3"/></svg>
-    </button>
-    <div class="lightbox__stage">
-      <img src="" alt="">
-      <button class="lightbox__btn lightbox__btn--prev" aria-label="Предыдущее фото">
-        <svg width="22" height="12" viewBox="0 0 26 12" fill="none"><path d="M26 6H2M6 1L1 6l5 5" stroke="currentColor" stroke-width="1.2"/></svg>
-      </button>
-      <button class="lightbox__btn lightbox__btn--next" aria-label="Следующее фото">
-        <svg width="22" height="12" viewBox="0 0 26 12" fill="none"><path d="M0 6h24M20 1l5 5-5 5" stroke="currentColor" stroke-width="1.2"/></svg>
-      </button>
-    </div>
-    <div class="lightbox__meta">
-      <span class="lightbox__counter">1 / 9</span>
-      <span class="lightbox__caption"></span>
-    </div>
-  </div>
-
-  <!-- =====================  «ОТДЫХ БЕЗ СПЕШКИ»  ===================== -->
-  <section class="slow" aria-label="Отдых без спешки">
-    <div class="slow__bg">
-      <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=2000&q=80" alt="Тёплый золотой вечер над лугом" loading="lazy">
-    </div>
-    <div class="slow__content container">
-      <h2 class="slow__title reveal">«Иногда лучший план — никуда не спешить.»</h2>
-      <p class="slow__sub reveal" style="--d:.12s">Природа. Тишина. Тёплый огонь.<br>И время, которое принадлежит только вам.</p>
-    </div>
-  </section>
-
-  <!-- =====================  БРОНИРОВАНИЕ  ===================== -->
-  <section class="section section--dark" id="booking">
-    <div class="container booking__grid">
-      <div class="booking__side">
-        <p class="eyebrow eyebrow--light reveal">Бронирование</p>
-        <h2 class="h-display reveal" style="--d:.08s">Ваше путешествие<br>начинается <em style="color:var(--sand)">здесь</em>.</h2>
-        <p class="lead reveal" style="--d:.16s; color:rgba(243,239,230,.7)">Оставьте заявку — и мы свяжемся с вами, чтобы подтвердить даты и детали отдыха.</p>
-        <div class="booking__contacts reveal" style="--d:.24s">
-          <a href="tel:+77054173602"><span>Телефон</span>+7 705 417 36 02</a>
-          <a href="https://wa.me/77054173602?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0%20%C2%AB%D0%A1%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%C2%BB." target="_blank" rel="noopener"><span>WhatsApp</span>Написать нам</a>
-        </div>
-
-        <div class="booking__info reveal" style="--d:.32s">
-          <div class="info-item">
-            <span class="info-label">Питание</span>
-            <p>По договоренности с администрацией базы</p>
-          </div>
-          <div class="info-item">
-            <span class="info-label">Трансфер</span>
-            <p>10 000 ₸ на снегоходе в один конец (до 5 человек)</p>
-          </div>
-          <div class="info-item">
-            <span class="info-label">Как добраться</span>
-            <p>До базы 12 км от села Тарханка на снегоходе или лыжах. Ориентир — Глубоковский район ВКО</p>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <form class="booking__form reveal" id="booking-form" style="--d:.12s">
-          <div class="field">
-            <label for="b-date-in">Дата заезда</label>
-            <input type="date" id="b-date-in" name="date-in" required>
-          </div>
-          <div class="field">
-            <label for="b-date-out">Дата выезда</label>
-            <input type="date" id="b-date-out" name="date-out" required>
-          </div>
-          <div class="field">
-            <label for="b-guests">Количество гостей</label>
-            <select id="b-guests" name="guests" required>
-              <option value="" selected disabled>Выберите</option>
-              <option value="1">1 гость</option>
-              <option value="2">2 гостя</option>
-              <option value="3">3 гостя</option>
-              <option value="4">4 гостя</option>
-              <option value="5+">5 и более</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="b-room">Тип размещения</label>
-            <select id="b-room" name="room" required>
-              <option value="" selected disabled>Выберите</option>
-              <option value="2">2-местный номер</option>
-              <option value="3">3-местный номер</option>
-              <option value="4">4-местный номер</option>
-              <option value="any">Нужна консультация</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="b-name">Имя</label>
-            <input type="text" id="b-name" name="name" placeholder="Как к вам обращаться" required>
-          </div>
-          <div class="field">
-            <label for="b-phone">Телефон</label>
-            <input type="tel" id="b-phone" name="phone" placeholder="+7 ___ ___ __ __" required>
-          </div>
-          <button type="submit" class="btn btn--light">Отправить заявку</button>
-        </form>
-
-        <div class="booking__success" id="booking-success" role="status">
-          <svg width="52" height="52" viewBox="0 0 52 52" fill="none"><circle cx="26" cy="26" r="24.5" stroke="currentColor" stroke-width="1.2"/><path d="M16 27l7 7 13-15" stroke="currentColor" stroke-width="1.4"/></svg>
-          <h3>Спасибо!</h3>
-          <p>Мы получили вашу заявку.<br>Для подтверждения бронирования свяжитесь с нами.</p>
-          <div class="btn-row">
-            <a class="btn btn--light" href="https://wa.me/77054173602?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0%20%C2%AB%D0%A1%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%C2%BB." target="_blank" rel="noopener">Написать в WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =====================  КОНТАКТЫ И КАРТА  ===================== -->
-  <section class="section" id="contacts">
-    <div class="container">
-      <div class="contacts__grid">
-        <div class="contacts__info reveal">
-          <p class="eyebrow">Как добраться</p>
-          <h2 class="contacts__logo">Слияние</h2>
-          <p class="contacts__tag">Там, где встречаются две реки.</p>
-          <div class="contacts__row"><span>Район</span>Глубоковский район, Восточный Казахстан</div>
-          <div class="contacts__row"><span>От села</span>12 км от села Тарханка</div>
-          <div class="contacts__row"><span>Реки</span>На слиянии рек Ульба и Сержиха</div>
-          <div class="contacts__row"><span>Сезон</span>Круглогодично</div>
-          <div class="contacts__row"><span>Телефон</span><a href="tel:+77054173602">+7 705 417 36 02</a></div>
-          <div class="contacts__btns">
-            <a href="tel:+77054173602" class="btn btn--ink">Позвонить</a>
-            <a href="https://wa.me/77054173602?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0%20%C2%AB%D0%A1%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%C2%BB." target="_blank" rel="noopener" class="btn btn--ghost">WhatsApp</a>
-          </div>
-        </div>
-
-        <div class="map-wrap clip-reveal" style="--d:.1s">
-          <iframe
-            src="https://maps.google.com/maps?q=%D1%81%D0%B5%D0%BB%D0%BE%20%D0%A2%D0%B0%D1%80%D1%85%D0%B0%D0%BD%D0%BA%D0%B0%2C%20%D0%93%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%20%D0%92%D0%BE%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%BE-%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C&t=&z=9&ie=UTF8&iwloc=&output=embed"
-            title="Карта: село Тарханка, Глубоковский район"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen></iframe>
-          <div class="map-wrap__bar">
-            <p>Ориентир — село Тарханка. До базы — 12 км, последний отрезок на снегоходе или лыжах.</p>
-            <a class="btn btn--ink" href="https://www.google.com/maps/dir/?api=1&destination=%D1%81%D0%B5%D0%BB%D0%BE+%D0%A2%D0%B0%D1%80%D1%85%D0%B0%D0%BD%D0%BA%D0%B0,+%D0%93%D0%BB%D1%83%D0%B1%D0%BE%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9+%D1%80%D0%B0%D0%B9%D0%BE%D0%BD,+%D0%92%D0%BE%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%BE-%D0%9A%D0%B0%D0%B7%D0%B0%D1%85%D1%81%D1%82%D0%B0%D0%BD%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C" target="_blank" rel="noopener">Построить маршрут</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =====================  FOOTER  ===================== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <p class="footer__logo">Слияние</p>
-          <p>Там, где встречаются две реки.</p>
-        </div>
-        <nav class="footer__nav" aria-label="Навигация в подвале">
-          <div class="footer__col">
-            <h4>База</h4>
-            <a href="#about">О базе</a>
-            <a href="#stay">Проживание</a>
-            <a href="#experiences">Впечатления</a>
-            <a href="#gallery">Галерея</a>
-          </div>
-          <div class="footer__col">
-            <h4>Связь</h4>
-            <a href="#contacts">Контакты</a>
-            <a href="tel:+77054173602">+7 705 417 36 02</a>
-            <a href="https://wa.me/77054173602?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0%20%C2%AB%D0%A1%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%C2%BB." target="_blank" rel="noopener">WhatsApp</a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
-          </div>
-        </nav>
-      </div>
-      <div class="footer__bottom">
-        <span>© <span id="year">2026</span> База отдыха «Слияние» · Глубоковский район</span>
-        <span>Восточный Казахстан · Круглогодично</span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Плавающая кнопка WhatsApp -->
-  <a class="wa-float" href="https://wa.me/77054173602?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D0%BE%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B8%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0%20%C2%AB%D0%A1%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5%C2%BB."
-     target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
-    <svg width="27" height="27" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91A9.86 9.86 0 0 0 12.04 2zm0 18.03h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.2 8.2 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.25 8.23zm4.52-6.16c-.25-.13-1.47-.72-1.7-.8-.22-.09-.39-.13-.55.12-.17.25-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.73-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.43h-.47c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.13.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.6.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"/></svg>
-  </a>
-
+<script id="ultra-motion-js">
+(()=>{
+ const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const hero=document.getElementById('heroBg'), statement=document.getElementById('statementBg');
+ let ticking=false;
+ function parallax(){if(reduce||ticking)return;ticking=true;requestAnimationFrame(()=>{const y=scrollY;if(hero)hero.style.transform=`translate3d(0,${y*.055}px,0) scale(1.045)`;if(statement){const r=statement.getBoundingClientRect();statement.style.transform=`translate3d(0,${(innerHeight/2-r.top)*.035}px,0) scale(1.045)`}ticking=false})}
+ addEventListener('scroll',parallax,{passive:true});
+ // staggered reveals
+ document.querySelectorAll('.reveal').forEach((el,i)=>el.style.transitionDelay=(Math.min(i%5,4)*70)+'ms');
+ // magnetic-ish desktop buttons
+ if(matchMedia('(pointer:fine)').matches&&!reduce){
+   const c=document.createElement('div');c.className='lux-cursor';document.body.appendChild(c);let x=innerWidth/2,y=innerHeight/2,cx=x,cy=y;
+   addEventListener('pointermove',e=>{x=e.clientX;y=e.clientY});
+   (function loop(){cx+=(x-cx)*.18;cy+=(y-cy)*.18;c.style.left=cx+'px';c.style.top=cy+'px';requestAnimationFrame(loop)})();
+   document.querySelectorAll('a,button,.room,.experience,.gallery-item').forEach(el=>{el.addEventListener('mouseenter',()=>c.classList.add('active'));el.addEventListener('mouseleave',()=>c.classList.remove('active'))});
+ }
+ // parallax cards from data-parallax if present
+ document.querySelectorAll('[data-parallax]').forEach(el=>{el.style.willChange='transform'});
+})();
+</script>
 </body>
 </html>
